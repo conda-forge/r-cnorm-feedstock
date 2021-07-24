@@ -1,4 +1,4 @@
-{% set version = '2.0.3' %}
+{% set version = "2.0.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/cNORM_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/cNORM/cNORM_{{ version }}.tar.gz
-  sha256: cc7852ddfdd4bb2d4dbc599597709b418ec4c4172b0f21ebe4e6c452dc0638bf
+  sha256: b0d80b14a069c1bc921a1de44e5cb435bfcb46a7daf11a0abfae368758b7227b
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -43,18 +43,10 @@ test:
 about:
   home: https://www.psychometrica.de/cNorm_en.html, https://github.com/WLenhard/cNORM
   license: AGPL-3.0-only
-  summary: 'Conventional methods for producing standard scores in psychometrics or biometrics
-    are often plagued with "jumps" or "gaps" (i.e., discontinuities) in norm tables
-    and low confidence for assessing extreme scores. The continuous norming method introduced
-    by A. Lenhard et al. (2016, <doi:10.1177/1073191116656437>; 2019, <doi:10.1371/journal.pone.0222279>)
-    and generates continuous test norm scores on the basis of the raw data from standardization
-    samples, without requiring assumptions about the distribution of the raw data: Norm
-    scores are directly established from raw data by modeling the latter ones as a function
-    of both percentile scores and an explanatory variable (e.g., age). The method minimizes
-    bias arising from sampling and measurement error, while handling marked deviations
-    from normality, addressing bottom or ceiling effects and capturing almost all of
-    the variance in the original norm data sample. An online demonstration is available
-    via <https://cnorm.shinyapps.io/cNORM/>.'
+  summary: 'Conventional methods for producing standard scores in psychometrics or biometrics are often plagued with "jumps" or "gaps" (i.e., discontinuities) in norm tables and low confidence for assessing extreme scores. The continuous norming method introduced by A. Lenhard et al. (2016, <doi:10.1177/1073191116656437>;
+    2019, <doi:10.1371/journal.pone.0222279>) and generates continuous test norm scores on the basis of the raw data from standardization samples, without requiring assumptions about the distribution of the raw data: Norm scores are directly established from raw data by modeling the latter ones as a function of both percentile
+    scores and an explanatory variable (e.g., age). The method minimizes bias arising from sampling and measurement error, while handling marked deviations from normality, addressing bottom or ceiling effects and capturing almost all of the variance in the original norm data sample. An online demonstration is available via
+    <https://cnorm.shinyapps.io/cNORM/>.'
   license_family: AGPL
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/AGPL-3
