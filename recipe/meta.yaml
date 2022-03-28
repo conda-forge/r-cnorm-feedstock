@@ -1,4 +1,4 @@
-{% set version = "2.1.0" %}
+{% set version = "3.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/cNORM_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/cNORM/cNORM_{{ version }}.tar.gz
-  sha256: 52d0f831c2bfac93999b004c6f9ef84fe8230dc954da7b3d10030640fb7e3106
+  sha256: 4fdc3e033bf76d7ad8bb3e8e413de4830ec15c6b102da3ce99e29c09fda7e008
 
 build:
   merge_build_host: true  # [win]
