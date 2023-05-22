@@ -1,11 +1,11 @@
-About r-cnorm
-=============
+About r-cnorm-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-cnorm-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.psychometrica.de/cNorm_en.html, https://github.com/WLenhard/cNORM
 
 Package license: AGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-cnorm-feedstock/blob/main/LICENSE.txt)
 
 Summary: Conventional methods for producing standard scores in psychometrics or biometrics are often plagued with "jumps" or "gaps" (i.e., discontinuities) in norm tables and low confidence for assessing extreme scores. The continuous norming method introduced by A. Lenhard et al. (2016, <doi:10.1177/1073191116656437>; 2019, <doi:10.1371/journal.pone.0222279>) and generates continuous test norm scores on the basis of the raw data from standardization samples, without requiring assumptions about the distribution of the raw data: Norm scores are directly established from raw data by modeling the latter ones as a function of both percentile scores and an explanatory variable (e.g., age). The method minimizes bias arising from sampling and measurement error, while handling marked deviations from normality, addressing bottom or ceiling effects and capturing almost all of the variance in the original norm data sample. An online demonstration is available via <https://cnorm.shinyapps.io/cNORM/>.
 
