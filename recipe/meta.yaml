@@ -1,6 +1,5 @@
 {% set version = "3.0.4" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-cnorm
@@ -13,8 +12,7 @@ source:
   sha256: d766bfd86f8a871b972b9b9cd952fa2e5bb7c0fe6903b3f2c15eccf4612a17e2
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
