@@ -1,4 +1,4 @@
-{% set version = "3.1.0" %}
+{% set version = "3.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/cNORM_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/cNORM/cNORM_{{ version }}.tar.gz
-  sha256: 3648400bed80d8ffeb3417b00812894f0c8244e940ca74a566856040fd159805
+  sha256: 91d64a181a5a3dfe0a2e9651e128bd23db046b4ca795b793d2cad59db548010d
 
 build:
   number: 0
@@ -24,14 +24,12 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-lattice >=0.20
-    - r-latticeextra >=0.6
-    - r-leaps >=3.0
+    - r-ggplot2 >=3.5.1
+    - r-leaps >=3.1
   run:
     - r-base
-    - r-lattice >=0.20
-    - r-latticeextra >=0.6
-    - r-leaps >=3.0
+    - r-ggplot2 >=3.5.1
+    - r-leaps >=3.1
 
 test:
   commands:
