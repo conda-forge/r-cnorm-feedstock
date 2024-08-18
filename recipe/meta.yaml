@@ -24,14 +24,12 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-lattice >=0.20
-    - r-latticeextra >=0.6
-    - r-leaps >=3.0
+    - r-ggplot2 >=3.5.1
+    - r-leaps >=3.1
   run:
     - r-base
-    - r-lattice >=0.20
-    - r-latticeextra >=0.6
-    - r-leaps >=3.0
+    - r-ggplot2 >=3.5.1
+    - r-leaps >=3.1
 
 test:
   commands:
