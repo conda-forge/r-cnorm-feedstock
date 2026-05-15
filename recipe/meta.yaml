@@ -1,4 +1,4 @@
-{% set version = "3.5.3" %}
+{% set version = "3.5.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/cNORM_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/cNORM/cNORM_{{ version }}.tar.gz
-  sha256: d23f851b413ce2a9364fe9ef1a842a1af63308ee4c9d754f63e6def3c30c634c
+  sha256: 73c3f89a8ba45a7c26a6323972d51e6ebfb5b9530c1c85dd8dc9830ab583cc1b
 
 build:
   number: 0
